@@ -1,0 +1,178 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>New Features Added to MuzHack</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=555905d369">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://blog.muzhack.com/new-features-added-to-muzhack/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="MuzHack">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="New Features Added to MuzHack">
+    <meta property="og:description" content="Two major new features have been introduced in MuzHack: Dedicated bills of materials (BOMs) as part of build instructions (for now only available to GitHub based projects) and PDF versions of build instructions. Dedicated BOMs The benefits that dedicated BOMs bring are twofold: Writing BOMs has become drastically simpler for">
+    <meta property="og:url" content="http://blog.muzhack.com/new-features-added-to-muzhack/">
+    <meta property="og:image" content="http://blog.muzhack.com/content/images/2016/08/screenshot.png">
+    <meta property="article:published_time" content="2016-08-04T12:02:38.484Z">
+    <meta property="article:modified_time" content="2016-08-04T12:02:38.483Z">
+    <meta property="article:publisher" content="https://www.facebook.com/muzhack">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="New Features Added to MuzHack">
+    <meta name="twitter:description" content="Two major new features have been introduced in MuzHack: Dedicated bills of materials (BOMs) as part of build instructions (for now only available to GitHub based projects) and PDF versions of build instructions. Dedicated BOMs The benefits that dedicated BOMs bring are twofold: Writing BOMs has become drastically simpler for">
+    <meta name="twitter:url" content="http://blog.muzhack.com/new-features-added-to-muzhack/">
+    <meta name="twitter:image:src" content="http://blog.muzhack.com/content/images/2016/08/screenshot.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Arve Knudsen">
+    <meta name="twitter:site" content="@muzhack">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "MuzHack",
+        "logo": "http://blog.muzhack.com/content/images/2016/06/Muzhack_twitter_icon.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Arve Knudsen",
+        "url": "http://blog.muzhack.com/author/arve/",
+        "sameAs": []
+    },
+    "headline": "New Features Added to MuzHack",
+    "url": "http://blog.muzhack.com/new-features-added-to-muzhack/",
+    "datePublished": "2016-08-04T12:02:38.484Z",
+    "dateModified": "2016-08-04T12:02:38.483Z",
+    "image": "http://blog.muzhack.com/content/images/2016/08/screenshot.png",
+    "description": "Two major new features have been introduced in MuzHack: Dedicated bills of materials (BOMs) as part of build instructions (for now only available to GitHub based projects) and PDF versions of build instructions. Dedicated BOMs The benefits that dedicated BOMs bring are twofold: Writing BOMs has become drastically simpler for"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.8">
+    <link rel="alternate" type="application/rss+xml" title="MuzHack" href="http://blog.muzhack.com/rss/">
+</head>
+<body class="post-template nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://blog.muzhack.com/">Home</a></li>
+    </ul>
+        <a class="subscribe-button icon-feed" href="http://blog.muzhack.com/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(../content/images/2016/08/screenshot.png)">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="http://blog.muzhack.com"><img src="../content/images/2016/06/Muzhack_twitter_icon.png" alt="MuzHack"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">New Features Added to MuzHack</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-08-04">04 August 2016</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Two major new features have been introduced in MuzHack: Dedicated bills of materials (BOMs) as part of build instructions (for now only available to GitHub based projects) and PDF versions of build instructions.</p>
+
+<h2 id="dedicatedboms">Dedicated BOMs</h2>
+
+<p>The benefits that dedicated BOMs bring are twofold:</p>
+
+<ol>
+<li>Writing BOMs has become drastically simpler for project authors, since they can simply write their BOMs as concise <a href="http://www.yaml.org/">YAML</a> files, which is much more user friendly than writing the same as Markdown tables. It means that BOMs are also semantically encoded, rather than just baked into the instructions document as regular text. See for example <a href="https://github.com/aknuds1/befaco-rampage/blob/master/muzhack/bom.yaml">the one for Befaco Rampage</a>, which is quite involved.  </li>
+<li>BOMs are presented separately from the instructions themselves, and the containing section can be minimized in case the user wants to see just the instructions themselves.</li>
+</ol>
+
+<h2 id="buildinstructionsaspdf">Build Instructions as PDF</h2>
+
+<p>PDF documents are now auto generated for build instructions. Just click the corresponding link inside the Instructions tab, for example <a href="https://muzhack.com/u/aknudsen/befaco-rampage#instructions">Befaco Rampage</a>, and you'll download a document ready for printing a paper copy to have by your side as you're actually building the thing. Much more practical than having to check the computer...</p>
+
+<p>Unfortunately, the PDF documents have some ways to go when it comes to visual styling. Hopefully this will get better in the future. Remember though that MuzHack is <a href="https://github.com/muzhack/muzhack">open source</a> after all, and contributions to improve f.ex. the PDF functionality would be more than welcome!</p>
+        </section>
+
+        <footer class="post-footer">
+
+
+
+            <section class="author">
+                <h4><a href="../author/arve/">Arve Knudsen</a></h4>
+
+                    <p>Read <a href="../author/arve/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=New%20Features%20Added%20to%20MuzHack&amp;url=http://blog.muzhack.com/new-features-added-to-muzhack/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.muzhack.com/new-features-added-to-muzhack/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://blog.muzhack.com/new-features-added-to-muzhack/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story prev no-cover" href="../parasite-custom-firmware-for-mutable-instruments-clouds/">
+        <section class="post">
+            <h2>Parasite - Custom Firmware for Mutable Instruments Clouds</h2>
+            <p>Clouds is a Eurorack synthesizer module produced by the prolific French manufacturer Mutable Instruments, whose innovative and stylish modules…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://blog.muzhack.com">MuzHack</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=555905d369"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=555905d369"></script>
+
+</body>
